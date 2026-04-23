@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — Asistencia Productores</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --verde: #2d6a4f;
+      --verde-claro: #40916c;
+      --verde-suave: #d8f3dc;
+      --tierra: #6b4226;
+      --crema: #fefae0;
+      --gris: #555;
+      --borde: #b7d6bf;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--crema);
+      color: #2a2a2a;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--verde);
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+      border-bottom: 5px solid var(--verde-claro);
+    }
+
+    header .app-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 300;
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(24px, 5vw, 38px);
+      font-weight: 600;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    header .subtitle {
+      font-size: 14px;
+      opacity: 0.75;
+      font-weight: 300;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .toc {
+      background: white;
+      border: 1px solid var(--borde);
+      border-left: 4px solid var(--verde);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .toc h2 {
+      font-family: 'Lora', serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--verde);
+      margin-bottom: 14px;
+    }
+
+    .toc ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+
+    .toc ol li {
+      margin-bottom: 4px;
+    }
+
+    .toc ol li a {
+      color: var(--gris);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .toc ol li a:hover { color: var(--verde); }
+
+    section {
+      margin-bottom: 44px;
+      padding-bottom: 44px;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 21px;
+      font-weight: 600;
+      color: var(--verde);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      background: var(--verde);
+      color: white;
+      border-radius: 50%;
+      font-size: 14px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--tierra);
+      margin: 24px 0 10px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #333;
+      font-size: 15.5px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 16px;
+    }
+
+    ul li {
+      padding: 7px 12px 7px 36px;
+      position: relative;
+      font-size: 15px;
+      color: #333;
+      border-radius: 4px;
+      transition: background 0.15s;
+    }
+
+    ul li:hover { background: var(--verde-suave); }
+
+    ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 12px;
+      color: var(--verde-claro);
+      font-size: 12px;
+      top: 9px;
+    }
+
+    .highlight-box {
+      background: var(--verde-suave);
+      border-left: 4px solid var(--verde-claro);
+      border-radius: 0 6px 6px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: var(--verde);
+    }
+
+    .no-box {
+      background: #fff8f0;
+      border-left: 4px solid var(--tierra);
+      border-radius: 0 6px 6px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 15px;
+      color: var(--tierra);
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--verde);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 13px;
+      font-weight: 300;
+    }
+
+    footer strong { color: white; }
+
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 60px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-badge">Aplicación Móvil</div>
+  <h1>Política de Privacidad</h1>
+  <p class="subtitle">Asistencia Productores &nbsp;·&nbsp; Última actualización: 23 de abril de 2026</p>
+</header>
+
+<div class="container">
+
+  <nav class="toc">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1">Introducción</a></li>
+      <li><a href="#s2">Responsable del Tratamiento de Datos</a></li>
+      <li><a href="#s3">Audiencia Objetivo</a></li>
+      <li><a href="#s4">Datos Personales que Recopilamos</a></li>
+      <li><a href="#s5">Finalidad del Tratamiento de Datos</a></li>
+      <li><a href="#s6">Compartición de Datos con Terceros</a></li>
+      <li><a href="#s7">Publicidad y Compras dentro de la Aplicación</a></li>
+      <li><a href="#s8">Seguridad de los Datos</a></li>
+      <li><a href="#s9">Conservación de los Datos</a></li>
+      <li><a href="#s10">Derechos del Usuario</a></li>
+      <li><a href="#s11">Permisos del Dispositivo</a></li>
+      <li><a href="#s12">Cambios en esta Política</a></li>
+      <li><a href="#s13">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <h2><span class="num">1</span> Introducción</h2>
+    <p>Bienvenido/a a <strong>Asistencia Productores</strong> (en adelante, "la Aplicación"). La presente Política de Privacidad describe cómo recopilamos, utilizamos, almacenamos y protegemos la información personal de los usuarios que acceden a nuestra aplicación móvil disponible en Google Play Store.</p>
+    <p>Esta política ha sido elaborada en cumplimiento con las Políticas del Programa para Desarrolladores de Google Play y la normativa aplicable en materia de protección de datos personales.</p>
+    <p>Al utilizar la Aplicación, usted acepta los términos descritos en esta Política de Privacidad. Si no está de acuerdo con alguno de sus términos, le solicitamos que no utilice la Aplicación.</p>
+  </section>
+
+  <section id="s2">
+    <h2><span class="num">2</span> Responsable del Tratamiento de Datos</h2>
+    <p>El responsable del tratamiento de los datos personales recabados a través de la Aplicación es el desarrollador de <strong>Asistencia Productores</strong>. Para cualquier consulta relacionada con el tratamiento de sus datos, puede ponerse en contacto con nosotros a través de los canales indicados en la sección de Contacto de esta política.</p>
+  </section>
+
+  <section id="s3">
+    <h2><span class="num">3</span> Audiencia Objetivo</h2>
+    <p>Asistencia Productores está destinada exclusivamente a usuarios <strong>mayores de 18 años</strong>. No está dirigida a menores de edad ni recopila de manera intencional datos de niños o adolescentes menores de 18 años.</p>
+    <p>Si tomamos conocimiento de que se han recopilado datos de un menor sin el consentimiento del padre, madre o tutor legal, procederemos a eliminar dicha información a la brevedad posible.</p>
+  </section>
+
+  <section id="s4">
+    <h2><span class="num">4</span> Datos Personales que Recopilamos</h2>
+
+    <h3>4.1 Datos proporcionados por el usuario</h3>
+    <p>La Aplicación puede recopilar los siguientes datos personales que usted nos proporciona de forma voluntaria:</p>
+    <ul>
+      <li>Nombre y apellido</li>
+      <li>Información personal básica necesaria para el uso de la Aplicación</li>
+    </ul>
+
+    <h3>4.2 Datos que NO recopilamos</h3>
+    <div class="no-box">La Aplicación NO recopila los siguientes tipos de datos:</div>
+    <ul>
+      <li>Datos de ubicación geográfica (GPS o similar)</li>
+      <li>Fotografías, imágenes o archivos multimedia</li>
+      <li>Registros de llamadas o mensajes SMS</li>
+      <li>Datos financieros o bancarios</li>
+      <li>Datos biométricos</li>
+      <li>Información de contactos del dispositivo</li>
+    </ul>
+
+    <h3>4.3 Datos técnicos de uso</h3>
+    <p>Es posible que la Aplicación registre datos técnicos básicos de uso con el fin de mejorar el rendimiento, tales como información sobre errores o fallos de funcionamiento. Estos datos son anónimos y no permiten identificar personalmente a los usuarios.</p>
+  </section>
+
+  <section id="s5">
+    <h2><span class="num">5</span> Finalidad del Tratamiento de Datos</h2>
+    <p>Los datos personales recopilados serán utilizados exclusivamente para las siguientes finalidades:</p>
+    <ul>
+      <li>Identificar al usuario dentro de la Aplicación y personalizar su experiencia.</li>
+      <li>Gestionar el acceso y uso de las funcionalidades de la Aplicación.</li>
+      <li>Comunicarnos con el usuario para responder consultas o brindar asistencia técnica.</li>
+      <li>Mejorar las funcionalidades y el rendimiento de la Aplicación.</li>
+      <li>Cumplir con las obligaciones legales aplicables.</li>
+    </ul>
+    <p>Los datos no serán utilizados para ninguna finalidad distinta a las indicadas sin previo consentimiento del usuario.</p>
+  </section>
+
+  <section id="s6">
+    <h2><span class="num">6</span> Compartición de Datos con Terceros</h2>
+    <div class="highlight-box">Asistencia Productores NO vende, alquila ni comercializa los datos personales de sus usuarios a terceros bajo ninguna circunstancia.</div>
+    <p>Los datos personales podrán ser compartidos únicamente en los siguientes casos excepcionales:</p>
+    <ul>
+      <li>Con proveedores de servicios técnicos que nos asistan en la operación de la Aplicación, bajo estrictas obligaciones de confidencialidad.</li>
+      <li>Cuando sea requerido por ley, orden judicial u autoridad gubernamental competente.</li>
+      <li>Para proteger los derechos, la propiedad o la seguridad de la Aplicación, sus usuarios u otras personas.</li>
+    </ul>
+    <p>En ningún caso la Aplicación comparte datos con redes publicitarias ni con terceros con fines comerciales.</p>
+  </section>
+
+  <section id="s7">
+    <h2><span class="num">7</span> Publicidad y Compras dentro de la Aplicación</h2>
+    <div class="no-box">La Aplicación NO contiene anuncios publicitarios de ningún tipo.</div>
+    <p>Asimismo, la Aplicación <strong>NO ofrece compras dentro de la aplicación</strong> (in-app purchases) ni suscripciones de pago.</p>
+  </section>
+
+  <section id="s8">
+    <h2><span class="num">8</span> Seguridad de los Datos</h2>
+    <p>Implementamos medidas técnicas y organizativas razonables para proteger sus datos personales contra accesos no autorizados, pérdida, alteración o divulgación indebida. Sin embargo, ningún sistema de transmisión o almacenamiento de datos puede garantizar una seguridad absoluta.</p>
+    <p>En caso de detectar una vulneración de seguridad que pueda afectar sus datos personales, nos comprometemos a notificarle de conformidad con la normativa aplicable.</p>
+  </section>
+
+  <section id="s9">
+    <h2><span class="num">9</span> Conservación de los Datos</h2>
+    <p>Los datos personales serán conservados durante el tiempo necesario para cumplir con las finalidades descritas en esta política o mientras el usuario mantenga una cuenta activa en la Aplicación. Una vez que el usuario solicite la eliminación de su cuenta o de sus datos, procederemos a su supresión en un plazo razonable, salvo que la ley exija su conservación por un período determinado.</p>
+  </section>
+
+  <section id="s10">
+    <h2><span class="num">10</span> Derechos del Usuario</h2>
+    <p>En virtud de la normativa aplicable en materia de protección de datos, usted tiene derecho a:</p>
+    <ul>
+      <li><strong>Acceso:</strong> solicitar información sobre los datos personales que conservamos sobre usted.</li>
+      <li><strong>Rectificación:</strong> solicitar la corrección de datos inexactos o incompletos.</li>
+      <li><strong>Supresión:</strong> solicitar la eliminación de sus datos personales cuando ya no sean necesarios.</li>
+      <li><strong>Oposición:</strong> oponerse al tratamiento de sus datos en determinadas circunstancias.</li>
+      <li><strong>Portabilidad:</strong> recibir sus datos en un formato estructurado y de uso común.</li>
+    </ul>
+    <p>Para ejercer cualquiera de estos derechos, puede contactarnos a través de la información indicada en la sección de Contacto.</p>
+  </section>
+
+  <section id="s11">
+    <h2><span class="num">11</span> Permisos del Dispositivo</h2>
+    <p>La Aplicación solicitará únicamente los permisos estrictamente necesarios para su correcto funcionamiento. Cualquier permiso será explicado al usuario antes de su concesión, y podrá revocarlo en cualquier momento desde la configuración de su dispositivo.</p>
+    <p>No se solicitarán permisos sensibles o de alto riesgo (SMS, registros de llamadas, cámara, micrófono, ubicación) salvo que sean imprescindibles para una funcionalidad específica y el usuario haya prestado su consentimiento expreso.</p>
+  </section>
+
+  <section id="s12">
+    <h2><span class="num">12</span> Cambios en esta Política de Privacidad</h2>
+    <p>Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento para reflejar cambios en la Aplicación, en la legislación aplicable o en nuestras prácticas de privacidad. Cuando realicemos modificaciones sustanciales, le notificaremos a través de la Aplicación o por otros medios apropiados.</p>
+    <p>Le recomendamos revisar esta política periódicamente. La fecha de la última actualización figura al inicio del documento.</p>
+  </section>
+
+  <section id="s13">
+    <h2><span class="num">13</span> Contacto</h2>
+    <p>Si tiene preguntas, dudas o solicitudes relacionadas con esta Política de Privacidad o con el tratamiento de sus datos personales, puede comunicarse con nosotros a través del apartado de soporte disponible dentro de la Aplicación o mediante los canales de contacto publicados en la ficha de la Aplicación en Google Play Store.</p>
+  </section>
+
+</div>
+
+<footer>
+  <strong>Asistencia Productores</strong> &nbsp;·&nbsp; Política de Privacidad &nbsp;·&nbsp; Última actualización: 23 de abril de 2026
+</footer>
+
+</body>
+</html>
